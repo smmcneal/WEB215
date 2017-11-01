@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<title>Sighting Report</title>
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <h1>Elvis Has <em>Not</em> Left the Building!</h1>
+	<h2>Did you see Elvis? Complete the form and let us know.</h2>
+	<form action="" method="">
+        <label for="date">Date: </label><input type="text" name="date" id="date"><br>
+        <label for="who">Who else was with Elvis?</label>
+        <select name="who" id="who">
+            <option>Select one...</option>
+            <option>Jimmy Hoffa</option>
+            <option>Jimi Hendrix</option>
+            <option>D.B. Cooper</option>
+            <option>Bruce Lee</option>
+            <option>Aliens</option>
+            <option>Other</option>
+            <option>No one</option>
+        </select><br>
+        <img src="images/none.jpg" alt="Who was with Elvis" id="whopic"><br>
+        
+        How many times have you seen Elvis before this sighting?<br>
+        <div id="radios">
+            <label for="never">Never</label>
+            <input type="radio" name="times" value="0" id="never">
+            <label for="once">Once</label>
+            <input type="radio" name="times" value="1" id="once">
+            <label for="twice">Twice</label>
+            <input type="radio" name="times" value="2" id="twice">
+            <label for="thrice">Thrice</label>
+            <input type="radio" name="times" value="3" id="thrice">
+            <label for="more">4 or more</label>
+            <input type="radio" name="times" value="4" id="more">
+        </div>
+        <br>
+        
+        
+        How much of an Elvis fan are you?<br>
+        <div id="checks">
+            <label for="graceland">I've been to Graceland</label>
+            <input type="checkbox" name="graceland" id="graceland" value="graceland">
+            <label for="vegas">I saw him perform in Las Vegas</label>
+            <input type="checkbox" name="vegas" id="vegas" value="vegas">
+            <label for="jumper">I have my own Elvis jumper</label>
+            <input type="checkbox" name="jumper" id="jumper" value="jumper"><br>
+
+            <label for="location">Where did you see Elvis?</label>
+            <input type="text" name="location" id="location">
+        </div>
+        <br>
+        
+        <button id="send">Send</button>
+        
+	</form>
+</body>
+</html>
